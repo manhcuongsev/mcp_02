@@ -1,0 +1,74 @@
+{
+  "dependencies": {
+    "@types/microtime": "^2.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rxjs": "^7.8.1",
+    "serialport": "^12.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8",
+    "@types/react": "^18.2.52",
+    "@types/react-dom": "^18.2.18",
+    "@types/serialport": "^8.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.3",
+    "vite": "^5.1.1",
+    "vite-node": "^1.2.2",
+    "vite-plugin-checker": "^0.6.2",
+    "vitest": "^0.34.6"
+  },
+  "name": "edison",
+  "type": "module",
+  "version": "0.1.33",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*.js"
+  },
+  "module": "./dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "description": "This package can control Arduino with TypeScript!",
+  "scripts": {
+    "build:esm": "tsc -p tsconfig.esm.json && node rename-to-esm.mjs",
+    "build": "npm run build:esm",
+    "dev": "vite",
+    "serve": "vite preview",
+    "lint": "npx eslint src/**/*.ts ",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "format": "prettier --write \"./src/**/*.{ts}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllenShintani/Edison.git"
+  },
+  "keywords": [
+    "IoT",
+    "Arduino",
+    "TypeScript",
+    "JavaScript",
+    "Robotics",
+    "edison",
+    "edison.ts",
+    "edison.js"
+  ],
+  "author": "aluta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AllenShintani/Edison/issues"
+  },
+  "homepage": "https://github.com/AllenShintani/Edison#readme"
+}
