@@ -62,7 +62,7 @@ board.on('ready', (port: SerialPort) => {
 
 We love collaborating with folks inside and outside of GitHub and welcome contributions!
 
-> 👉 [Discord](eHB5dBkZyW)
+> 👉 [Discord]
 # https://tea.xyz/what-is-this-file
 ---
 version: 1.0.0
