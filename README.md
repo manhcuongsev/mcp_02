@@ -61,7 +61,8 @@ board.on('ready', (port: SerialPort) => {
 ## Contributing
 
 We love collaborating with folks inside and outside of GitHub and welcome contributions!
+Add Contributors!
 
 > 👉 Chanel for support!
 MCP Community !
----
+-----------------------------
